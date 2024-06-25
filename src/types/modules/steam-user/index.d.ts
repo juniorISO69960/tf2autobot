@@ -1,5 +1,5 @@
 declare module 'steam-user' {
-    import { EventEmitter } from 'events';
+    import EventEmitter from 'events';
     import SteamID from 'steamid';
 
     interface Events {

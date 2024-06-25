@@ -168,7 +168,8 @@ function getSummary(
         const isTF2Items = testPriceKey(priceKey);
 
         // compatible with pollData from before v3.0.0 / before v2.2.0 and/or v3.0.0 or later ↓
-        const amount = typeof dict[priceKey] === 'object' ? (dict[priceKey]['amount'] as number) : dict[priceKey];
+        const amount =
+            typeof dict[priceKey] === 'object' ? ((dict[priceKey] as object)['amount'] as number) : dict[priceKey];
         const sku =
             type === 'summary-accepted' ? (entry?.sku ?? priceKey).replace(/;p\d+/, '') : entry?.sku ?? priceKey;
 

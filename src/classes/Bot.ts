@@ -40,7 +40,7 @@ import { sendStats } from './DiscordWebhook/export';
 
 import Options from './Options';
 import IPricer from './IPricer';
-import { EventEmitter } from 'events';
+import EventEmitter from 'events';
 import { Blocked } from './MyHandler/interfaces';
 import filterAxiosError from '@tf2autobot/filter-axios-error';
 import { axiosAbortSignal } from '../lib/helpers';

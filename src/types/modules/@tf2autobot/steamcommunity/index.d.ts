@@ -1,5 +1,5 @@
 declare module '@tf2autobot/steamcommunity' {
-    import { EventEmitter } from 'events';
+    import EventEmitter from 'events';
     import SteamID from 'steamid';
     import { CookieJar } from 'request';
     import { EFriendRelationship } from 'steam-user';
